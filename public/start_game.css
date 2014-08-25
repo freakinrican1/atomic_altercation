@@ -1,0 +1,80 @@
+div {
+    width: 100%;
+    height: 107%;
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    content: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG");
+    opacity:0.27;
+  }
+
+
+body {
+  margin: 60 0 0 0;
+  text-align: center;
+  font-family: Dosis;
+  font-weight: 5px;
+    }
+      
+    body img {
+      width: 30%;
+      opacity: .5;
+      
+    }
+      
+
+    h1 {
+		  width: 100%;
+		  font: 80px Mathlete, Sans-Serif;
+		  color: #616369;
+		  letter-spacing: 2px;
+		  margin: 0 0 0 0;
+		  text-align: center;		
+	}
+    
+    h3 {
+		  width: 100%;
+		  font: 20px Dosis, Sans-Serif;
+      font-weight: 4px;
+		  color: #616369;
+		  letter-spacing: 1px;
+		  margin: 0 0 0 0;
+		  text-align: center;   
+      
+    }
+
+    input[type=text] {
+        border: solid 0px #000000;
+        padding: 10px; 
+        font-family: Dosis;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 3px;
+        
+      }
+      
+      input[type="submit"] {
+          background: #616369; 
+          color: white;
+          font-family: Dosis;
+          text-align: center;
+          font-size: 25px;
+          font-weight: 5px;
+        }
+      
+      
+      select {
+         
+         background: url(http://cazthetrainer.com/wp-content/uploads/2014/01/arrow-203-512.png) no-repeat right #FFFFFF;
+         background-size: 25px 25px;
+         width: 268px;
+         padding-left: 10px;
+         font-size: 20px;
+         font-family: Dosis;
+         line-height: 1;
+         border: 2px;
+         border-radius: 0;
+         height: 34px;
+         -webkit-appearance: none;
+         }

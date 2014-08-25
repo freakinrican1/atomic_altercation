@@ -1,0 +1,14 @@
+<p>
+  <a href="/admin/new_element">Add new element</a>
+</p>
+
+<% @all_elements.each do |e| %>
+  <%#
+    So here, `u` is a User object (meaning it's an *instance* of the
+    User class). So we can run *instance* methods on `u`.
+  %>
+
+  <p>
+    <a href="/admin/elements/<%= e.id %>"><%= e.name %></a> - <%= e.weight %> ---> <a href="/admin/<%= e.id %>/edit_element">Edit</a>
+    
+    <% end %>

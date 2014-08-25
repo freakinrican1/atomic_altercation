@@ -1,0 +1,53 @@
+<head>
+<link rel="stylesheet" type="text/css" href="battle.css">
+</head>
+
+
+<div>
+</div>
+
+
+<body>
+
+<% if @p1_element.weight > @p2_element.weight == true  %>
+
+<h1><strong>
+  <%= "#{$p1.name} WINS!" %>
+</strong></h1>
+
+<br>
+<br>
+
+<img src = "<%= @p1_element.comic %>" >
+<br>
+<br>
+<p style="width:150px;"> 
+  <h3> <strong><%= "#{@p1_element.name}" %></strong><%= " has the atomic weight of #{@p1_element.weight}"%> <br> 
+    <%= "which destroys"%> <strong><%="#{@p2_element.name}"%></strong> <%="whose atomic weight is only #{@p2_element.weight}!" %>
+</p> 
+
+<% else %>
+
+<h1><strong>
+<%= "#{$p2.name} WINS!"%>
+</strong> </h1>
+
+<br>
+
+<img src = "<%= @p2_element.comic %>">
+<br>
+<br>
+<p style="width:150px;"> 
+  <h3> <strong><%= "#{@p2_element.name}" %></strong><%= " has the atomic weight of #{@p2_element.weight}"%> <br> 
+  <%= "which annihilates"%> <strong><%="#{@p1_element.name}"%></strong> <%="whose atomic weight is only  #{@p1_element.weight}!" %>
+</p> 
+
+<% end %>
+
+<br>
+
+<!-- <img src="http://i.imgur.com/2fNYdXO.png"> -->
+
+
+<h3><a href="/startgame?p1=<%= $p1.name %>&p2=<%= $p2.name %>">Play Again</a>  |  |  <a href="/">New Game</a></h3>
+</body>

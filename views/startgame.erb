@@ -1,0 +1,57 @@
+<head>
+<link rel="stylesheet" type="text/css" href="start_game.css">
+</head>
+
+<div>
+</div>
+
+<body>
+
+
+<p>
+<h1> <b><%= "Hello #{$p1.name}!" %> </b>
+
+<br>
+  <h3>Chose Your Element!</h3>
+  
+  <br>
+  
+  <form action="/battle" method="get">
+  <select name = 'p1_element'>
+    <% @element_names.sort.each do |x| %>
+    <option value = '<%= x %>' ><b><%= x %></b></option>
+    <% end %>
+    
+    
+  </select>
+
+</p>
+
+<br>
+ <img src="http://i.imgur.com/fur17s2.png?1"> 
+ </body>
+<br>
+
+
+<p>
+<h1><b> <%= "Sup #{$p2.name}?" %> </b>
+
+<br>
+  <h3>Chose Your Element!</h3>
+ <br>
+  
+  <form action="/battle" method="get">
+  <select name = 'p2_element'>
+    <% @element_names.sort.each do |x| %>
+    <option value = '<%= x %>' ><b><%= x %></b></option>
+    <% end %>
+  </select>
+
+</p>
+
+<br>
+<br>
+<br>
+ <input type="submit" value ="Duke it Out!">
+
+ </body>

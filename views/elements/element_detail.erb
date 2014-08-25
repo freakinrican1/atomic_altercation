@@ -1,0 +1,12 @@
+<h1><%= @element.name %>'s Details</h1>
+
+<h3> 
+  Element Name: <%= @element.name %>
+<br>  
+  Element Weight: <%= @element.weight %> 
+<br>  
+   <img src="<%= @element.comic %>" width = "400" height = "580">
+</h3>
+ 
+
+<a href="/admin/<%= @element.id %>/edit_element">Edit this element.</a>

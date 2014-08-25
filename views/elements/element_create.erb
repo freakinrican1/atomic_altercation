@@ -1,0 +1,14 @@
+<%  if @element.valid? == false %>
+
+<h2> Please re-enter your element</h2>
+
+<% else %>
+
+
+<h1>Success!</h1>
+
+<p>Made a new element with name <%= @element.name %>.</p>
+
+<a href="/admin/all_elements">Return to main list.</a>
+
+<% end %>

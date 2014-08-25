@@ -1,0 +1,7 @@
+development:
+  database: db/elements_game_test.db
+  adapter: sqlite3
+
+test:
+  database: db/elements_game.db
+  adapter: sqlite3
