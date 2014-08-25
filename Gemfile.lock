@@ -39,6 +39,7 @@ GEM
     nori (2.4.0)
     periodic_table (0.0.4)
       savon
+    pg (0.17.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -93,6 +94,7 @@ PLATFORMS
 DEPENDENCIES
   nokogiri
   periodic_table
+  pg
   pry
   sinatra
   sinatra-activerecord
