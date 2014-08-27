@@ -12,8 +12,9 @@ require_relative './models/moves.rb'
 
 get "/" do
   
-Element.delete_all
-Element.add_elements
+  Element.delete_all
+  Element.add_elements
+  
   erb :home
 end
 
