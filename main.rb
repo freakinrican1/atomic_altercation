@@ -14,8 +14,6 @@ get "/" do
   
 Element.delete_all
 Element.add_elements
-
-binding.pry
   erb :home
 end
 
