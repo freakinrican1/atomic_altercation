@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler'
+require 'open-uri'
 
 Bundler.require
 
@@ -10,8 +11,11 @@ require_relative './models/moves.rb'
 
 
 get "/" do
-
   
+Element.delete_all
+Element.add_elements
+
+binding.pry
   erb :home
 end
 
