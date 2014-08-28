@@ -26,7 +26,8 @@ body {
 
     h1 {
 		  width: 100%;
-		  font: 80px Mathlete, Sans-Serif;
+      font-family: 'Amatic SC', cursive;
+		  font: 90px Amatic SC, Sans-Serif;
 		  color: #616369;
 		  letter-spacing: 2px;
 		  margin: 0 0 0 0;
