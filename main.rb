@@ -15,10 +15,9 @@ get "/" do
   erb :home
 end
 
+
 get "/startgame" do 
-  
-  
-  
+   
   @element_names = Element.uniq.pluck(:name)
   
   if params["p1"] == "" 
