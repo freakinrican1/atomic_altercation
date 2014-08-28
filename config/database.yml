@@ -1,5 +1,5 @@
 development:
-  database: db/elements_game.db
+  database: db/elements_game_test.db
   adapter: sqlite3
 
 test:
