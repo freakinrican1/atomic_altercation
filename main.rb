@@ -18,7 +18,7 @@ end
 get "/startgame" do 
   
   
-  Player.delete_all
+  
   @element_names = Element.uniq.pluck(:name)
   
   $p1 = Player.create(name: params["p1"])
