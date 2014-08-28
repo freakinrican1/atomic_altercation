@@ -99,7 +99,7 @@ body {
   
   div {
       width: 100%;
-      height: 120%;
+      height: 135%;
       overflow: hidden;
       z-index:-1;
       background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
@@ -113,7 +113,17 @@ body {
       top:0;
     }
     
+    body {
+      width: 100%;
+      margin: 0 0 0 0;
+      text-align: center;
+      font-family: Dosis;
+      font-weight: 5px;
+      opacity:1;
+        }
+    
     body img {
+    padding: 40px 0px 0 0;
     width: 70%;
     opacity: .5;
     margin: 0 0 0 60px;
