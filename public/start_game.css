@@ -1,16 +1,17 @@
 div {
     width: 100%;
-    height: 107%;
+    height: 1000px;
+    overflow: hidden;
     z-index:-1;
-    position:absolute;
-    left:0;
-    top:0;
     background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
     opacity:0.27;
+    position:absolute;
+    left:0;
+    top:0;
   }
 
 
