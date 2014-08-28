@@ -5,8 +5,11 @@ div {
     position:absolute;
     left:0;
     top:0;
-    background-image: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG");
-    background-repeat: repeat-y;
+    background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     opacity:0.27;
   }
 
