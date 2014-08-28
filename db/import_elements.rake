@@ -21,10 +21,11 @@ task :import_elements do
     begin
       puts "looking up element #{y}"
       element = Element.create(name: y, weight: PeriodicTable.lookup(y).weight)
+      puts "created element #{element} with the name #{element.name} an id #{element.id}" 
     rescue
       next element = Element.create(name: y)
-      
+      puts "created element #{element} with the name #{element.name} an id #{element.id}" 
     end
+  end
 
   end
-end
