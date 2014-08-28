@@ -19,16 +19,11 @@ end
 get "/startgame" do 
    
   @element_names = Element.uniq.pluck(:name)
-  
-  if params["p1"] == "" 
-    params["p1"]= "stranger one"
     
   $p1 = Player.create(name: params["p1"])
-  end
-  if params["p2"] == "" 
-    params["p2"]= "stranger two"
+
   $p2 = Player.create(name: params["p2"])
-end
+
   erb :startgame
 
 end
