@@ -28,6 +28,11 @@ body {
     h1 {
 		  width: 100%;
 		  font: 80px Mathlete, Sans-Serif;
+        src: font-url('/assets/Mathlete-Skinny-webfont.eot');
+        src: font-url('/assets/Mathlete-Skinny-webfont.eot?#iefix') format('embedded-opentype'),
+             font-url('/assets/Mathlete-Skinny-webfont.woff') format('woff'),
+             font-url('/assets/Mathlete-Skinny-webfont.ttf') format('truetype'),
+             font-url('/assets/Mathlete-Skinny-webfont.svg#mathleteskinny') format('svg');
 		  color: #616369;
 		  letter-spacing: 2px;
 		  margin: 0 0 0 0;
