@@ -94,7 +94,7 @@ end
 
 #Show
 get "/admin/elements/:id/delete" do 
-  @element = Element.delete(params[:id])
+   Element.delete(params[:id])
   
   erb :"elements/element_delete"
   
