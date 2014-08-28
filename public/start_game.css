@@ -138,9 +138,36 @@ body {
                        }
     
                      body img {
-                     padding: 10px 0px 0 0;
+                     padding: -10px 0px 0 0;
                      width: 50%;
                      opacity: .5;
                      margin: 0 0 0 0px;
     
                      }
+                     
+                     input[type="submit"] {
+                         background: #616369; 
+                         color: white;
+                         font-family: Dosis;
+                         text-align: center;
+                         font-size: 18px;
+                         font-weight: 5px;
+                         margin-top: -20px;
+                       }
+                     
+                     
+                     select {
+         
+                        background: url(http://cazthetrainer.com/wp-content/uploads/2014/01/arrow-203-512.png) no-repeat right #FFFFFF;
+                        background-size: 25px 25px;
+                        width: 268px;
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Dosis;
+                        line-height: 1;
+                        border: 2px;
+                        border-radius: 0;
+                        height: 34px;
+                        margin-top: -60px;
+                        -webkit-appearance: none;
+                        }
