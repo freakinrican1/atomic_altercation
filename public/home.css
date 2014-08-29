@@ -34,7 +34,7 @@ body {
       }
     
     #container img {
-      padding: 40px 200px 0 0;
+    padding: 40px 200px 0 0;
     width: 40%;
     opacity: .5;
     
@@ -52,6 +52,17 @@ body {
 		  text-align: center;	
       opacity:1;	
 	}
+    
+  #container h2{
+	  width: 100%;
+     font-family: 'Amatic SC', cursive;
+	  font: 22px Amatic SC, Sans-Serif;
+	  color: #808080;
+	  letter-spacing: 2px;
+	  text-align: center;
+    padding-top: -20;		
+
+  }
     
     #container h3 {
 		  width: 100%;
