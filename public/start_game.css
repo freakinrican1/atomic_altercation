@@ -1,30 +1,44 @@
 
-
 body {
+  position: relative;
   width: 100%;
-  margin: 40px 0 0 0;
+  margin: 0 0 0 0;
   text-align: center;
   font-family: Dosis;
   font-weight: 5px;
     }
     
-    body:after{
+    body:after {
+     
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index:-1;
+      height:100%;
       content: "";
       background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }
+        opacity: 0.2;
+      }
       
-    body img {
+      
+      #container {
+        width: 100%;
+        padding: 20px 0 20px 0;
+      }
+      
+    #container img {
       width: 30%;
       opacity: .5;
       
     }
       
 
-    body h1 {
+   #container h1 {
 		  width: 100%;
       font-family: 'Amatic SC', cursive;
       font: 90px Amatic SC;
@@ -34,7 +48,7 @@ body {
 		  text-align: center;		
 	}
     
-    body h3 {
+    #container h3 {
 		  width: 100%;
 		  font: 20px Dosis, Sans-Serif;
       font-weight: 4px;
@@ -45,7 +59,7 @@ body {
       
     }
 
-    body input[type=text] {
+    #container input[type=text] {
       border: solid 0px #000000;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
@@ -58,7 +72,7 @@ body {
         
       }
       
-      body input[type="submit"] {
+      #container input[type="submit"] {
           background: #616369; 
           color: white;
           font-family: Dosis;
@@ -68,9 +82,13 @@ body {
           border: none;
           border-radius: 3px;
         }
+        
+        #container form{
+          margin: 0 0 0 0;
+        }
       
       
-      body select {
+      #container select {
          
          background: url(http://cazthetrainer.com/wp-content/uploads/2014/01/arrow-203-512.png) no-repeat right #FFFFFF;
          background-size: 25px 25px;
@@ -88,42 +106,38 @@ body {
          
          @media screen and (max-width: 550px) {
   
-                  /*html {
-                       width: 100%;
-                       overflow: hidden;
-                       z-index:-1;
-                       background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed;
-                         -webkit-background-size: cover;
-                         -moz-background-size: cover;
-                         -o-background-size: cover;
-                         background-size: cover;
-                       opacity:0.20;
-                       position:absolute;
-                       left:0;
-                       top:0;
-                     }*/
+                 
     
-                     body {
+                     /*body {
+                       position: relative;
                        width: 100%;
-                       margin: 40px 0 0 0;
+
+                       margin: 0 0 0 0 ;
                        text-align: center;
                        font-family: Dosis;
                        font-weight: 5px;
                          }
-                         
-                         body:after{
+
+                         body:after {
+
+                           position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           z-index:-1;
+                           height:100%;
                            content: "";
-                           background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
+                           background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed;
                              -webkit-background-size: cover;
                              -moz-background-size: cover;
                              -o-background-size: cover;
                              background-size: cover;
-                      
-                         }
+                             opacity: 0.2;
+                           }*/
                          
                          
                          
-                         body input[type="submit"] {
+                         #container input[type="submit"] {
                              background: #616369; 
                              color: white;
                              font-family: Dosis;
@@ -135,7 +149,7 @@ body {
                            }
                      
                      
-                        body select {
+                        #container select {
          
                             background: url(http://cazthetrainer.com/wp-content/uploads/2014/01/arrow-203-512.png) no-repeat right #FFFFFF;
                             background-size: 25px 25px;
@@ -149,19 +163,19 @@ body {
                             height: 34px;
                             margin-top: 0px;
                             -webkit-appearance: none;
+                            opacity: 1;
                             }
                 
-                         body h1 {
+                         #container h1 {
                      		  width: 100%;
                            font-family: 'Amatic SC', cursive;
                      		  font: 50px Amatic SC, Sans-Serif;
                      		  color: #616369;
                      		  letter-spacing: 2px;
-                     		  margin: 60px 0 0 0;
                      		  text-align: center;		
                      	}
               
-                       body h3 {
+                       #container h3 {
                    		  width: 100%;
                    		  font: 18px Dosis, Sans-Serif;
                         font-weight: 6px;
@@ -173,11 +187,10 @@ body {
       
                        }
     
-                     body img {
-                     padding: -10px 0px 0 0;
+                     #container img {
                      width: 50%;
                      opacity: .5;
-                     margin: 40px 0 0 0px;
+                     margin: 0px 0 0 0px;
     
                      }
                      

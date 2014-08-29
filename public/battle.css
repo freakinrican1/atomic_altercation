@@ -1,27 +1,36 @@
-div {
-    width: 100%;
-    height: 1000px;
-    z-index:-1;
-    position:absolute;
-    left:0;
-    top:0;
-    background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    opacity:0.20;
-  }
-
-
 body {
-  margin: 60 0 0 0;
+  position: relative;
+  width: 100%;
+  margin: 0 0 0 0;
   text-align: center;
   font-family: Dosis;
   font-weight: 5px;
     }
+    
+    body:after {
+     
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index:-1;
+      height:100%;
+      content: "";
+      background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 0.2;
+      }
       
-    body img {
+      
+      #container {
+        width: 100%;
+        padding: 20px 0 20px 0;
+      }
+      
+    #container img {
       margin:  0 0 0 0;
       width: 22%;
       opacity: .6;
@@ -30,7 +39,7 @@ body {
     }
       
 
-    h1 {
+   #container h1 {
 		  width: 100%;
       font-family: 'Amatic SC', cursive;
 		  font: 100px Amatic SC, Sans-Serif;
@@ -40,7 +49,7 @@ body {
 		  text-align: center;		
 	}
     
-    h3 {
+    #container h3 {
 		  width: 100%;
 		  font: 22px Dosis, Sans-Serif;
       font-weight: 6px;
@@ -53,7 +62,7 @@ body {
     
         
 
-    input[type=text] {
+    #container input[type=text] {
         border: solid 0px #000000;
         padding: 10px; 
         font-family: Dosis;
@@ -63,7 +72,7 @@ body {
         
       }
       
-      input[type="submit"] {
+      #container input[type="submit"] {
           background: #616369; 
           color: white;
           font-family: Dosis;
@@ -72,43 +81,20 @@ body {
           font-weight: 10px;
         }
         
-        body a {
+        #container a {
           text-decoration: none;
           color: #616369;
         }
-        a:hover {
+       #container a:hover {
           color: black;
         }
         
 
 @media screen and (max-width: 550px) {
   
-          div {
-              width: 100%;
-              height: 1000px;
-              overflow: hidden;
-              z-index:-1;
-              background: url("http://www.padstone.co.uk/natural-stone-tiles/limestone/moleanos-fine-grain/honed/Moleanos%20Fine%20Grain%20Honed.JPG") no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-              opacity:0.20;
-              position:absolute;
-              left:0;
-              top:0;
-            }
-    
-            body {
-              width: 100%;
-              margin: 0 0 0 0;
-              text-align: center;
-              font-family: Dosis;
-              font-weight: 5px;
-              opacity:1;
-                }
+          
                 
-                h1 {
+               #container h1 {
             		  width: 100%;
                   font-family: 'Amatic SC', cursive;
             		  font: 50px Amatic SC, Sans-Serif;
@@ -118,18 +104,18 @@ body {
             		  text-align: center;		
             	}
               
-              h3 {
+             #container h3 {
           		  width: 100%;
-          		  font: 18px Dosis, Sans-Serif;
+          		  font: 15px Dosis, Sans-Serif;
                 font-weight: 6px;
           		  color: #616369;
           		  letter-spacing: 1px;
-          		  margin: 0 0 70 0;
+          		  margin: 0 20px 0 0 20px;
           		  text-align: center;   
       
               }
     
-            body img {
+            #container img {
             padding: 10px 0px 0 0;
             width: 50%;
             opacity: .5;
