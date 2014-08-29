@@ -25,11 +25,35 @@ body {
         opacity: 0.2;
       }
       
-      
-      #container {
-        width: 100%;
-        padding: 20px 0 20px 0;
+      #img_left {
+        float:left;
+        width:20%;
+        
       }
+      
+      #img_left img{
+        width:100%;
+        opacity:.50;
+      }
+      
+      #img_right {
+            float: right;
+            padding-top: 250px;
+            width:20%;
+        
+          }
+      
+          #img_right img{
+            width:100%;
+            opacity:.5
+          }
+      
+      
+          #container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px 0 20px 0;
+          }
       
     #container img {
       width: 30%;
@@ -81,6 +105,7 @@ body {
           font-weight: 5px;
           border: none;
           border-radius: 3px;
+       
         }
         
         #container form{
