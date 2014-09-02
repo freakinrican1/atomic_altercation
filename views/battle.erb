@@ -35,7 +35,7 @@
     <%= "which destroys"%> <strong><%="#{@p2_element.name}"%></strong> <%="whose atomic weight is only #{@p2_element.weight}!" %>
 </p> 
 
-<% else %>
+<% elsif @p1_element.weight < @p2_element.weight == true  %>
 
 <h1><strong>
 <%= "#{$p2.name} WINS!"%>
@@ -51,6 +51,16 @@
   <%= "which annihilates"%> <strong><%="#{@p1_element.name}"%></strong> <%="whose atomic weight is only  #{@p1_element.weight}!" %>
 </p> 
 
+<% else %>
+
+<h1><strong>
+Tie Game.
+</strong> </h1>
+<br>
+<br>
+<p style="width:150px;"> 
+  <h3> <strong>Choose different elements next time ya' dummies.</strong></h3>
+</p> 
 <% end %>
 
 
