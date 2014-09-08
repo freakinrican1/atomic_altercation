@@ -1,10 +1,10 @@
 $(document).ready(function(){
   
-  $("#p1_name_error").hide();
-  $("#p2_name_error").hide();
-
- //  $("#container").on("click", function(){
-//     $("#p1_name").hide();
+ //  $("#p1_name_error").hide();
+//   $("#p2_name_error").hide();
+//   $("#container").on("click", function(){
+//   $("#p1_name").hide();
+// });
 //     $("#p2_name").hide();
 //    $("#p1_name_error").show();
 //    $("#p2_name_error").show();
