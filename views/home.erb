@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="home.css">
 <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="home.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 </head>
 
@@ -15,12 +17,13 @@
 
 
 
-<form action="/startgame" method="get">
+<form action="/startgame" method="get" id="start_game">
   <p>
     <h3>Player 1 
      
     <br>
-    <input type="text" name= "p1" placeholder="your name here" >
+    <input type="text" name= "p1" id="p1_name" placeholder="Your name here" >
+    <input type="text" name= "p1" id="p1_name_error" placeholder="Your name here" >
   </p>
   
   <p>
@@ -28,10 +31,11 @@
     <br>
     
     
-    <input type="text" name= "p2" placeholder="your name here" >
+    <input type="text" name= "p2" id="p2_name" placeholder="Your name here" >
+    <input type="text" name= "p2" id="p2_name_error" placeholder="Your name here" >
   </p>
   
-   <input type="submit" value ="Start Game">
+   <input type="submit" value ="Start Game" id ="submit_button" disabled>
 </form>
 <br>
 <br>
